@@ -1,0 +1,17 @@
+[
+	{
+		"email": "hello_world@abc.com",
+		"password": "123456789Hello_World",
+		"productName": "ZARA COAT 3"
+	},
+	{
+		"email": "hello_world!@abc.com",
+		"password": "1234Hello",
+		"productName": "ADIDAS ORIGINAL"
+	},
+	{
+		"email": "hello_world!@abc.com",
+		"password": "1234Hello",
+		"productName": "IPHONE 13 PRO"
+	}
+]
