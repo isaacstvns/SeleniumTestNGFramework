@@ -31,6 +31,7 @@ public class WebDriverFactory {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--start-maximized");
+		options.addArguments("--headless=new");
 		return new ChromeDriver(options);
 	}
 
@@ -39,6 +40,7 @@ public class WebDriverFactory {
 		EdgeOptions options = new EdgeOptions();
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--start-maximized");
+		options.addArguments("--headless");
 		return new EdgeDriver(options);
 	}
 
@@ -47,6 +49,7 @@ public class WebDriverFactory {
 		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--start-maximized");
+		options.addArguments("--headless");
 		return new FirefoxDriver(options);
 	}
 }
