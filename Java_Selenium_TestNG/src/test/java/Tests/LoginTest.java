@@ -11,16 +11,16 @@ public class LoginTest extends BaseTest {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	
-	@Test(retryAnalyzer = Utils.Retry.class)
+
+	@Test(retryAnalyzer = Utils.Retry.class, groups = { "Smoke" })
 	public void validLogin() {
 		loginPage = new LoginPage(driver);
 		dashboardPage = new DashboardPage(driver);
 		loginPage.Login("hello_world@abc.com", "123456789Hello_World");
 		Assert.assertTrue(dashboardPage.footerText().equalsIgnoreCase("Design and Developed By - Kunal Sharma"));
 	}
-	
-	@Test
+
+	@Test(groups = { "Smoke" })
 	public void invalidLogin() {
 		loginPage = new LoginPage(driver);
 		loginPage.Login("hello_world@abc.com", "123456789Hello");
